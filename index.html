@@ -3,13 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>私のシンプルなページ.3</title>
+    <title>ようこそ！ - [あなたのサイト名]</title>
     <!-- Ptengine Tag -->
     <script src="https://js.ptengine.jp/23c3kkjv.js"></script>
     <!-- End Ptengine Tag -->
+    <style>
+        body {
+            font-family: 'Noto Sans JP', 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            text-align: center;
+            padding: 40px 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            padding: 50px 40px;
+            max-width: 700px;
+            width: 100%;
+            box-sizing: border-box; /* パディングを幅に含める */
+        }
+        h1 {
+            color: #007bff;
+            margin-bottom: 25px;
+            font-size: 2.8em;
+            letter-spacing: 1px;
+        }
+        p {
+            font-size: 1.15em;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 15px 35px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .cta-button:hover {
+            background-color: #218838;
+            transform: translateY(-2px);
+        }
+        .sub-text {
+            margin-top: 25px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        .sub-text a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .sub-text a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>こんにちは、世界！</h1>
-    <p>これはHTMLの簡単なサンプルページです。</p>
+    <div class="container">
+        <h1>[あなたのサイト名]へようこそ！</h1>
+        <p>
+            あなたの毎日を、もっと豊かに、もっと便利にするための場所です。<br>
+            私たちのサービスで、新しい発見と体験を始めましょう。
+        </p>
+        <a href="/signup" class="cta-button">今すぐ始める</a>
+        <p class="sub-text">すでにアカウントをお持ちですか？ <a href="/login">ログインはこちら</a></p>
+    </div>
 </body>
 </html>
